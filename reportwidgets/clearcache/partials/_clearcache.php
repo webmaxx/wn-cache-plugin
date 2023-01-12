@@ -11,25 +11,40 @@
             <ul>
                 <li>
                     cms/cache
-                    <span><?= data_get($size, 'cms.cache.formatted') ?></span>
+                    <span>
+                        <hide class="hidden"><?= data_get($size, 'cms.cache.bites') ?></hide>
+                        <?= data_get($size, 'cms.cache.formatted') ?>
+                    </span>
                 </li>
                 <li>
                     cms/combiner
-                    <span><?= data_get($size, 'cms.combiner.formatted') ?></span>
+                    <span>
+                        <hide class="hidden"><?= data_get($size, 'cms.combiner.bites') ?></hide>
+                        <?= data_get($size, 'cms.combiner.formatted') ?>
+                    </span>
                 </li>
                 <li>
                     cms/twig
-                    <span><?= data_get($size, 'cms.twig.formatted') ?></span>
+                    <span>
+                        <hide class="hidden"><?= data_get($size, 'cms.twig.bites') ?></hide>
+                        <?= data_get($size, 'cms.twig.formatted') ?>
+                    </span>
                 </li>
                 <li>
                     framework/cache
-                    <span><?= data_get($size, 'framework.cache.formatted') ?></span>
+                    <span>
+                        <hide class="hidden"><?= data_get($size, 'framework.cache.bites') ?></hide>
+                        <?= data_get($size, 'framework.cache.formatted') ?>
+                    </span>
                 </li>
 
                 <?php if ($del_upload_image_thumbs) : ?>
                     <li>
                         images/uploads
-                        <span><?= data_get($size, 'images.uploads.formatted') ?></span>
+                        <span>
+                            <hide class="hidden"><?= data_get($size, 'images.uploads.bites') ?></hide>
+                            <?= data_get($size, 'images.uploads.formatted') ?>
+                        </span>
                     </li>
                 <?php endif; ?>
             </ul>

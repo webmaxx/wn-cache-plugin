@@ -1,2 +1,4 @@
 '1.0.0':
     - 'First version of Cache'
+'1.0.1':
+    - 'Fix. The chart did not display the data correctly'
